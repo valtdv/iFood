@@ -1,4 +1,4 @@
-use ifood;
+use ifood_01;
 CREATE TABLE Usuario (
   idpersona int not null,
   contra varchar(20),

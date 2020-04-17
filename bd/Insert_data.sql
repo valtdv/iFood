@@ -1,4 +1,4 @@
-use ifood;
+use ifood_01;
 /*Usuarios*/
 INSERT INTO Usuario VALUES (1234567,'contra','Diego','Albor','Rojas','cra 34 #87-09','diegoaalborrojas@gmail.com');
 INSERT INTO Usuario VALUES (4597017,'contra123','Valeria','Osorio','Salcedo','cra 64 #79-89','valeosal@gmail.com');

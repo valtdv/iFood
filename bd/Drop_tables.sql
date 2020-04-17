@@ -1,4 +1,4 @@
-use ifood;
+use ifood_01;
 DROP TABLE Usuario;
 DROP TABLE Restaurante;
 DROP TABLE Administrador;
