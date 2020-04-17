@@ -50,13 +50,13 @@
             </li>
           </ul>
           <div class="form-inline my-2 my-lg-0">
-            <a class="nav-link text-white" href="./register-rest.html"
+            <a class="nav-link text-white" href="./register-rest.php"
               >¡Registra tu restaurante!
               <span class="sr-only">(current)</span></a
             >
             <button
               type="button"
-              onclick="window.location.href='./sign-log-in.html'"
+              onclick="window.location.href='./sign-log-in.php'"
               class="btn btn-outline-light"
             >
               Inicia sesión
@@ -250,10 +250,10 @@
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
             <h6 class="text-uppercase mb-4 font-weight-bold">iFood</h6>
             <p>
-              <a href="./register-rest.html">Registra tu restaurante</a>
+              <a href="./register-rest.php">Registra tu restaurante</a>
             </p>
             <p>
-              <a href="./sign-log-in.html">Inicia sesión</a>
+              <a href="./sign-log-in.php">Inicia sesión</a>
             </p>
             <p>
               <a href="#!">¿Quienes somos?</a>
