@@ -1,7 +1,13 @@
 <?php
     include('configuration.php');
 
-    $sql= "INSERT INTO Restaurante VALUES (11111,'El Sazon casero','cra 51b #35-05', 3034598, 'sazoncasero@hotmail.com')";
+    $email =  $_POST['email'];
+    $nombre = $_POST['nombre'];
+    $direccion = $_POST['direccion'];
+    $telefono = $_POST['telefono'];
+
+
+    $sql= "INSERT INTO Restaurante VALUES (11,'$nombre','$direccion', $telefono, '$email')";
 
     if (mysqli_query($connection, $sql)) {
         echo "New record created successfully";
