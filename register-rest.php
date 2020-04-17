@@ -13,7 +13,7 @@
   </head>
   <body class="pattern">
     <section id="form" class="d-flex justify-content-center">
-      <form class="bg-light" id="formulario" action='set_restaurante.php' method='post'>
+      <form class="bg-light" id="formulario" action='php/set_restaurante.php' method='post'>
         <div class="form-group">
           <h1>Registra tu restaurante</h1>
         </div>

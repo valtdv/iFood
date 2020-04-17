@@ -6,8 +6,7 @@
     $direccion = $_POST['direccion'];
     $telefono = $_POST['telefono'];
 
-
-    $sql= "INSERT INTO Restaurante VALUES (11,'$nombre','$direccion', $telefono, '$email')";
+    $sql="INSERT INTO `Restaurante` (`idrestaurante`, `nombre`, `ubicacion`, `telefono`, `correo`) VALUES ('11','$nombre','$direccion', '$telefono', '$email')";
 
     if (mysqli_query($connection, $sql)) {
         echo "New record created successfully";
