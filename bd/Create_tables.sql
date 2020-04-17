@@ -18,7 +18,7 @@ CREATE TABLE Restaurante (
   correo varchar(50),
   PRIMARY KEY (idrestaurante),
   UNIQUE INDEX idrestaurante_UNIQUE (idrestaurante ASC)
-)ENGINE = InnoDB DEFAULT CHARACTER SET = latin1;
+)ENGINE = InnoDB DEFAULT CHARACTER SET = latin1;/*Quitar el correo*/
 
 CREATE TABLE Administrador (
   idpersona int not null,
@@ -66,6 +66,7 @@ CREATE TABLE Plato (
 
 CREATE TABLE Ingrediente (
   idingrediente int not null,
+  nombre varchar(50),
   precio double,
   idplato int not null,
   PRIMARY KEY (idingrediente),

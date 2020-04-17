@@ -1,4 +1,4 @@
-use universidad;
+use ifood;
 DROP TABLE Usuario;
 DROP TABLE Restaurante;
 DROP TABLE Administrador;
@@ -7,3 +7,4 @@ DROP TABLE Orden;
 DROP TABLE Pago;
 DROP TABLE Plato;
 DROP TABLE Ingrediente;
+
