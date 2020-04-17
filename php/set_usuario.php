@@ -1,5 +1,5 @@
 <?php
-    include('configuration.php');
+    include('connection.php');
 
     $sql= "INSERT INTO Usuario VALUES (1234567,'contra','Diego','Albor','Rojas','cra 34 #87-09','diegoaalborrojas@gmail.com')";
 
