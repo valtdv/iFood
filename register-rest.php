@@ -13,7 +13,7 @@
   </head>
   <body class="pattern">
     <section id="form" class="d-flex justify-content-center">
-      <form class="bg-light" id="formulario">
+      <form class="bg-light" id="formulario" action='set_restaurante.php' method='post'>
         <div class="form-group">
           <h1>Registra tu restaurante</h1>
         </div>
@@ -33,7 +33,7 @@
           <label for='telefono'>Telefono</label>  
           <input type='text' class='form-control' id='telefono'  required> 
         </div>
-        <button type="submit" class="btn btn-danger">Registrar</button>
+        <button type="submit" class="btn btn-danger" >Registrar</button>
       </form>
     </section>
     <footer class="bg-light page-footer font-small mdb-color pt-4">
