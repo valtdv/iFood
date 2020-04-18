@@ -56,7 +56,7 @@
             >
             <button
               type="button"
-              onclick="window.location.href='./sign-log-in.html'"
+              onclick="window.location.href='./sign-log-in.php'"
               class="btn btn-outline-light"
             >
               Inicia sesión
