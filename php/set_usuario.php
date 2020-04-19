@@ -1,11 +1,20 @@
 <?php
-    include('configuration.php');
+    include('connection.php');
 
-    $sql= "INSERT INTO Usuario VALUES (1234567,'contra','Diego','Albor','Rojas','cra 34 #87-09','diegoaalborrojas@gmail.com')";
+    $id = random_int(0, 900);
+    $nombre = $_POST['nombre'];
+    $apellido1 = $_POST['apellido1'];
+    $apellido2 = $_POST['apellido2'];
+    $direccion = $_POST['direccion'];
+    $email1 = $_POST['email1'];
+    $password1 = $_POST['password1'];
 
+    $sql = "INSERT INTO Usuario VALUES ('$id','$password1','$nombre','$apellido1','$apellido2','$direccion','$email1')";
     if (mysqli_query($connection, $sql)) {
-        echo "New record created successfully";
+        echo "Cuenta creada exitosamente";
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($connection);
-    }    
+    }
+    mysqli_close($connection);
+    echo "<br><button type='submit' onclick=location='../index.php'> Aceptar </button>";
 ?>
