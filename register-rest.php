@@ -13,27 +13,27 @@
   </head>
   <body class="pattern">
     <section id="form" class="d-flex justify-content-center">
-      <form class="bg-light" id="formulario">
+      <form class="bg-light" id="formulario" action='php/set_restaurante.php' method='post'>
         <div class="form-group">
           <h1>Registra tu restaurante</h1>
         </div>
         <div class="form-group">
           <label for="email">Correo electrónico</label>
-          <input type="email" class="form-control" id="email" required>
+          <input type="email" class="form-control" id="email" name='email' required>
         </div>
-        <div class='form-group'> 
-          <label for='nombre'>Nombre del restaurante</label>  
-          <input type='text' class='form-control' id='nombre'  required> 
+        <div class='form-group'>
+          <label for='nombre'>Nombre del restaurante</label>
+          <input type='text' class='form-control' id='nombre' name='nombre' required>
         </div>
-        <div class='form-group'> 
-          <label for='direccion'>Dirección</label>  
-          <input type='text' class='form-control' id='direccion'  required> 
+        <div class='form-group'>
+          <label for='direccion'>Dirección</label>
+          <input type='text' class='form-control' id='direccion' name='direccion' required>
         </div>
-        <div class='form-group'> 
-          <label for='telefono'>Telefono</label>  
-          <input type='text' class='form-control' id='telefono'  required> 
+        <div class='form-group'>
+          <label for='telefono'>Telefono</label>
+          <input type='text' class='form-control' id='telefono'  name='telefono' required>
         </div>
-        <button type="submit" class="btn btn-danger">Registrar</button>
+        <button type="submit" class="btn btn-danger" >Registrar</button>
       </form>
     </section>
     <footer class="bg-light page-footer font-small mdb-color pt-4">

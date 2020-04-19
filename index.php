@@ -50,13 +50,13 @@
             </li>
           </ul>
           <div class="form-inline my-2 my-lg-0">
-            <a class="nav-link text-white" href="./register-rest.html"
+            <a class="nav-link text-white" href="./register-rest.php"
               >¡Registra tu restaurante!
               <span class="sr-only">(current)</span></a
             >
             <button
               type="button"
-              onclick="window.location.href='./sign-log-in.html'"
+              onclick="window.location.href='./sign-log-in.php'"
               class="btn btn-outline-light"
             >
               Inicia sesión
