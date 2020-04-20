@@ -8,8 +8,9 @@
     $email1 = $_POST['email1'];
     $password1 = $_POST['password1'];
     $membresia = false;
+    $telefono1 = $_POST['telefono1'];
 
-    $sql = "INSERT INTO Cliente VALUES ('$password1','$membresia','$nombre','$apellido1','$apellido2','$email1','$direccion',)";
+    $sql = "INSERT INTO Cliente VALUES ('$password1','$membresia','$nombre','$apellido1','$apellido2','$email1','$telefono1','$direccion')";
     if (mysqli_query($connection, $sql)) {
         echo "Cuenta creada exitosamente";
     } else {
