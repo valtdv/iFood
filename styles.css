@@ -19,6 +19,14 @@ body {
     padding-bottom: 15%;
 }
 
+section{
+  padding: 20px 0px;
+}
+
+#pedidos{
+  padding: 35px 200px;
+}
+
 #formulario{
     padding: 25px 20px;
     border-radius: 5%;

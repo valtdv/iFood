@@ -131,7 +131,7 @@
             <h3>2. Escoge tu comida</h3>
             <p>
               ¡Escoge lo que quieras! En MyFood tenemos una gran variedad de
-              productos de los mejores restaurantes del país
+              productos para ofrecerte.
             </p>
           </div>
           <!-- /.col-lg-4 -->
