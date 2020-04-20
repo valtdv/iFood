@@ -248,9 +248,6 @@
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
             <h6 class="text-uppercase mb-4 font-weight-bold">MyFood</h6>
             <p>
-              <a href="./register-rest.php">Registra tu restaurante</a>
-            </p>
-            <p>
               <a href="./sign-log-in.php">Inicia sesión</a>
             </p>
             <p>
