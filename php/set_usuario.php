@@ -35,7 +35,9 @@
         <article class='bg-light' id='formulario'>
            <h1>¡Registro exitoso!</h1>
            <p>Tú registro ha sido exitoso, ya puedes ingresar sesión en MyFood</p>
-          <button class='btn btn-danger' type='submit' onclick=location='../index.php'> Aceptar </button>
+           <div class='d-flex justify-content-center'>
+             <button class='btn btn-danger' type='submit' onclick=location='../index.php'> Aceptar </button>
+           </div>
         </article>
         </section>
         <script
