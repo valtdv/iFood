@@ -40,24 +40,24 @@
   <!--INFORMACIÓN DE LOS RESTAURANTES -->
   <section id="rest">
     <h1 class="d-flex justify-content-center display-3">Crea tu pedido</h1>
-    <form id="pedidos">
+    <form id="pedidos" action='php/set_pedido.php' method='post' >
       <div class="form-group">
         <label for="pedido">Nombre del pedido</label>
-        <input type="text" class="form-control" id="pedido" required>
+        <input type="text" class="form-control" id="pedido" name = "pedido" required>
       </div>
       <div class="form-group">
         <label for="ingredientes">Escoge tus ingredientes</label>
-        <select class="form-control" id="ingredientes" required>
-          <option></option>
+        <select class="form-control" id="ingredientes" name="ingredientes"required>
+          <option>1</option>
         </select>
       </div>
       <div class="form-group">
         <label for="preparacion">Detalles de preparación</label>
-        <textarea class="form-control" id="preparacion" rows="3" required></textarea>
+        <textarea class="form-control" id="preparacion" rows="3" name="preparacion"required></textarea>
       </div>
       <div class="form-group">
         <label for="pago">Método de pago</label>
-        <select class="form-control" id="pago">
+        <select class="form-control" id="pago" name="pago">
           <option>Efectivo</option>
           <option>Tarjeta de credito</option>
         </select>

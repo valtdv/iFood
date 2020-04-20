@@ -12,8 +12,8 @@
     <script src="./sign-log-in.js"></script>
   </head>
   <body class="pattern">
-    <section id="form" class="d-flex justify-content-center">
-      <form class="bg-light" id="formulario">
+    <section id="form" class="d-flex justify-content-center" >
+      <form class="bg-light" id="formulario" action='iniciar_sesion.php' method='post' >
         <div class="form-group">
           <h1>Iniciar sesión en MyFood</h1>
         </div>
@@ -23,6 +23,7 @@
             type="email"
             class="form-control"
             id="email1"
+            name = "email1"
             aria-describedby="emailHelp"
           />
         </div>
@@ -32,6 +33,7 @@
             type="password"
             class="form-control"
             id="password1"
+            name = "password1"
           />
         </div>
         <button type="submit" class="btn btn-danger">Iniciar sesión</button>
