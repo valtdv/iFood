@@ -165,9 +165,8 @@
             <div class="card-body">
               <h5 class="card-title">Comida árabe</h5>
               <p class="card-text">
-                ¡Delicioso! en MyFood puedes conseguir grandes variedades de
-                comida árabe, en todas las presentaciones, proveniente de los
-                mejores restaurantes del país, ¿se te antoja?
+                ¡Delicioso! en MyFood puedes conseguir crear y ordenar variedades de
+                comida árabe, en todas las presentaciones, ¿se te antoja?
               </p>
             </div>
           </div>
@@ -177,8 +176,7 @@
               <h5 class="card-title">Comida italiana</h5>
               <p class="card-text">
                 ¡Mamma mia! no hay nada como las deliciosas pastas o pizzas que
-                puedes encontrar en MyFood, escogidas de los mejores restaurantes
-                de tu ciudad, ¡animate a pedir!
+                puedes armar en MyFood ¡animate a pedir!
               </p>
             </div>
           </div>
