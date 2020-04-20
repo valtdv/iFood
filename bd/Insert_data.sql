@@ -3,8 +3,8 @@ use ifood_01;
 INSERT INTO Cliente VALUES (1234567,'contra',false,'Diego','Albor','Rojas','diegoaalborrojas@gmail.com',3135879014,'cra 34 #87-09');
 INSERT INTO Cliente VALUES (4597017,'contra123',true,'Valeria','Osorio','Salcedo','valeosal@gmail.com','cra 64 #79-89',3587047409);
 
-select *
-from Cliente;
+	select *
+	from Cliente;
 
 
 /*Adminsitrador*/
