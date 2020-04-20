@@ -15,6 +15,10 @@ function signin(){
       "<input type='text' class='form-control' id='apellido2' name='apellido2' required />" +
     "</div>" +
     "<div class='form-group'>" +
+      "<label for='telefono1'>Telefono</label>" +
+      "<input type='text' class='form-control' id='telefono1' name='telefono1' required />" +
+    "</div>" +
+    "<div class='form-group'>" +
       "<label for='direccion'>Dirección</label>" +
       "<input type='text' class='form-control' id='direccion' name='direccion' required />" +
     "</div>" +

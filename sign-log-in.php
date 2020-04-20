@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>iFood - Iniciar sesión</title>
+    <title>MyFood - Iniciar sesión</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
@@ -15,7 +15,7 @@
     <section id="form" class="d-flex justify-content-center">
       <form class="bg-light" id="formulario">
         <div class="form-group">
-          <h1>Iniciar sesión en iFood</h1>
+          <h1>Iniciar sesión en MyFood</h1>
         </div>
         <div class="form-group">
           <label for="email1">Correo electrónico</label>
@@ -50,7 +50,7 @@
           </div>
           <hr class="w-100 clearfix d-md-none" />
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-            <h6 class="text-uppercase mb-4 font-weight-bold">iFood</h6>
+            <h6 class="text-uppercase mb-4 font-weight-bold">MyFood</h6>
             <p>
               <a href="./register-rest.php">Registra tu restaurante</a>
             </p>

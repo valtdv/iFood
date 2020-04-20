@@ -1,15 +1,15 @@
 <?php
     include('connection.php');
 
-    $id = random_int(0, 900);
     $nombre = $_POST['nombre'];
     $apellido1 = $_POST['apellido1'];
     $apellido2 = $_POST['apellido2'];
     $direccion = $_POST['direccion'];
     $email1 = $_POST['email1'];
     $password1 = $_POST['password1'];
+    $membresia = false;
 
-    $sql = "INSERT INTO Usuario VALUES ('$id','$password1','$nombre','$apellido1','$apellido2','$direccion','$email1')";
+    $sql = "INSERT INTO Cliente VALUES ('$password1','$membresia','$nombre','$apellido1','$apellido2','$email1','$direccion',)";
     if (mysqli_query($connection, $sql)) {
         echo "Cuenta creada exitosamente";
     } else {

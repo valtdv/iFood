@@ -35,7 +35,12 @@
         </div>
         <button type="submit" class="btn btn-danger" >Registrar</button>
       </form>
+      </section>
+
+
     </section>
+
+    
     <footer class="bg-light page-footer font-small mdb-color pt-4">
       <div class="container text-center text-md-left">
         <div class="row text-center text-md-left mt-3 pb-3">

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>iFood</title>
+    <title>MyFood</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css" />
@@ -27,7 +27,7 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand text-white" href="#">iFood</a>
+        <a class="navbar-brand text-white" href="#">MyFood</a>
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -50,10 +50,10 @@
             </li>
           </ul>
           <div class="form-inline my-2 my-lg-0">
-            <a class="nav-link text-white" href="./register-rest.php"
+            <!-- class="nav-link text-white" href="./register-rest.php"
               >¡Registra tu restaurante!
               <span class="sr-only">(current)</span></a
-            >
+              -->
             <button
               type="button"
               onclick="window.location.href='./sign-log-in.php'"
@@ -119,7 +119,7 @@
               alt="confirmacion de contraseña"
             />
             <h3>1. Crea tu cuenta</h3>
-            <p>En tan solo unos cuantos pasos podras empezar a usar iFood</p>
+            <p>En tan solo unos cuantos pasos podras empezar a usar MyFood</p>
           </div>
           <!-- /.col-lg-4 -->
           <div class="col-lg-4">
@@ -130,7 +130,7 @@
             />
             <h3>2. Escoge tu comida</h3>
             <p>
-              ¡Escoge lo que quieras! En iFood tenemos una gran variedad de
+              ¡Escoge lo que quieras! En MyFood tenemos una gran variedad de
               productos de los mejores restaurantes del país
             </p>
           </div>
@@ -165,7 +165,7 @@
             <div class="card-body">
               <h5 class="card-title">Comida árabe</h5>
               <p class="card-text">
-                ¡Delicioso! en iFood puedes conseguir grandes variedades de
+                ¡Delicioso! en MyFood puedes conseguir grandes variedades de
                 comida árabe, en todas las presentaciones, proveniente de los
                 mejores restaurantes del país, ¿se te antoja?
               </p>
@@ -177,7 +177,7 @@
               <h5 class="card-title">Comida italiana</h5>
               <p class="card-text">
                 ¡Mamma mia! no hay nada como las deliciosas pastas o pizzas que
-                puedes encontrar en iFood, escogidas de los mejores restaurantes
+                puedes encontrar en MyFood, escogidas de los mejores restaurantes
                 de tu ciudad, ¡animate a pedir!
               </p>
             </div>
@@ -188,7 +188,7 @@
               <h5 class="card-title">Comida rápida</h5>
               <p class="card-text">
                 ¡Para otro día la dieta! si tienes antojo de una hamburguesa, un
-                perro caliente o un chuzo ¡iFood es lugar indicado para ti!
+                perro caliente o un chuzo ¡MyFood es lugar indicado para ti!
                 escoge lo que quieras a precios excelente y en cálidad
                 excelente, ¿qué esperas?
               </p>
@@ -204,7 +204,7 @@
               <h5 class="card-title">Comida mexicana</h5>
               <p class="card-text">
                 ¡Orale, wey! si no puedes ir a Mexico, ¡llevalo a tu estomago!
-                pide en iFood los más deliciosos platos de comida mexicana,
+                pide en MyFood los más deliciosos platos de comida mexicana,
                 ¡solo te tomara unos segundos!
               </p>
             </div>
@@ -215,7 +215,7 @@
               <h5 class="card-title">Comida colombiana</h5>
               <p class="card-text">
                 ¡No hay lugar como el lugar! esto, por supuesto, se extiende a
-                la comida. Con iFood puedes conseguir los más deliciosos platos
+                la comida. Con MyFood puedes conseguir los más deliciosos platos
                 típicos de país, enviados especialmente a tu domicilio, ¡qué
                 rico!
               </p>
@@ -226,7 +226,7 @@
             <div class="card-body">
               <h5 class="card-title">Comida asiatica</h5>
               <p class="card-text">
-                ¡Nihao! preparada tal y como al otro lado del mundo, iFood te
+                ¡Nihao! preparada tal y como al otro lado del mundo, MyFood te
                 ofrece una gran variedad de comida asiatica, deliciosa y lista
                 para hacer una fiesta en tu boca. No esperes más, ¡Pidela!
               </p>
@@ -248,7 +248,7 @@
           </div>
           <hr class="w-100 clearfix d-md-none" />
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-            <h6 class="text-uppercase mb-4 font-weight-bold">iFood</h6>
+            <h6 class="text-uppercase mb-4 font-weight-bold">MyFood</h6>
             <p>
               <a href="./register-rest.php">Registra tu restaurante</a>
             </p>
