@@ -39,3 +39,13 @@ a:hover{
 article{
   padding: 25px 0px;
 }
+
+.btn{
+  margin: 13px 12px 12px 10px;
+}
+
+.buttonHolder{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}

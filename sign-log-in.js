@@ -34,7 +34,9 @@ function signin(){
       "<label for='password1'>Confirma tu contraseña</label>" +
       "<input type='password' class='form-control' id='password1' name='password1' required />" +
     "</div>" +
-    "<button type='submit' class='btn btn-danger'>Registrarse</button>" +
+    "<div class ='buttonHolder'>"+
+      "<button type='submit' class='btn btn-danger'>Registrarse</button>" +
+    "</div>"+  
     "<a class='nav-link' onclick='login()'>¿Ya tienes una cuenta?</a>" +
   "</form>";
 }

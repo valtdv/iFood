@@ -36,8 +36,10 @@
             name = "password1"
           />
         </div>
-        <button type="submit" class="btn btn-danger">Iniciar sesión</button>
-        <a onclick="signin()">¡Crea tu cuenta!</a>
+        <div class = "buttonHolder">
+          <button type="submit" class="btn btn-danger">Iniciar sesión</button>
+          <button onclick="signin()" type "submit" class ="btn btn-danger"> Crear cuenta </button>
+        </div>
       </form>
     </section>
     <footer class="bg-light page-footer font-small mdb-color pt-4">
@@ -53,9 +55,6 @@
           <hr class="w-100 clearfix d-md-none" />
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
             <h6 class="text-uppercase mb-4 font-weight-bold">MyFood</h6>
-            <p>
-              <a href="./register-rest.php">Registra tu restaurante</a>
-            </p>
             <p>
               <a href="./sign-log-in.php">Inicia sesión</a>
             </p>
