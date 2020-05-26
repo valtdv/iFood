@@ -12,7 +12,7 @@
           include ('index.php');
         }else{
           echo "accedido";
-          include ('inicio.php');
+          include ('sesion_cliente.php');
         }
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($connection);

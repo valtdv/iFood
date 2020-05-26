@@ -5,7 +5,7 @@
   <title>MyFood - Inicio</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
 </head>
 
@@ -40,7 +40,7 @@
   <!--INFORMACIÓN DE LOS RESTAURANTES -->
   <section id="rest">
     <h1 class="d-flex justify-content-center display-3">Crea tu pedido</h1>
-    <form id="pedidos" action='php/set_pedido.php' method='post' >
+    <form id="pedidos" action='set_pedido.php' method='post' >
       <div class="form-group">
         <label for="pedido">Nombre del pedido</label>
         <input type="text" class="form-control" id="pedido" name = "pedido" required>

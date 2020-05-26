@@ -10,10 +10,10 @@
 
     if (mysqli_query($connection, $sql)) {
       //Rgistro exitoso
-      include('../html/pedido_exitoso.html');
+      include('./mensajes/pedido_exitoso.html');
     } else {
       //registro no exitoso
-      include('../html/error_registro.html');
+      include('./mensajes/error_registro.html');
     }
     mysqli_close($connection);
 ?>

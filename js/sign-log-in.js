@@ -1,6 +1,6 @@
 function signin(){
     document.title = "iFood - Registrarse";
-    document.getElementById("form").innerHTML = "<form class='bg-light' id='formulario' action='php/set_usuario.php' method='post'>" +
+    document.getElementById("form").innerHTML = "<form class='bg-light' id='formulario' action='../set_usuario.php' method='post'>" +
     "<div class='form-group'><h1>Crea tu cuenta en iFood</h1></div>" +
     "<div class='form-group'>" +
       "<label for='nombre'>Nombre</label>" +
