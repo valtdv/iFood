@@ -2,22 +2,22 @@ function detallesDelPedido(){
     let pedido = document.getElementById("ingredientes").value;
     switch(pedido){
         case "comida-arabe":
-            console.log(pedido);
+            document.getElementById("check").innerHTML = "";
             break;
         case "comida-italiana":
-            console.log(pedido);
+            document.getElementById("check").innerHTML = "";
             break;
         case "comida-rapida":
-            console.log(pedido);
+            document.getElementById("check").innerHTML = "";
             break;
         case "comida-mexicana":
-            console.log(pedido);
+            document.getElementById("check").innerHTML = "";
             break;
         case "comida-colombiana":
-            console.log(pedido);
+            document.getElementById("check").innerHTML = "";
             break;
         case "comida-asiatica":
-            console.log(pedido);
+            document.getElementById("check").innerHTML = "";
             break;   
     }
 }
