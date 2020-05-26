@@ -48,7 +48,8 @@
       </div>
       <div class="form-group">
         <label for="ingredientes">Escoge tu plato</label>
-        <select class="form-control" id="ingredientes" required>
+        <select class="form-control" id="ingredientes" onchange="detallesDelPedido()" required>
+          <option value="sin-escoger">---</option>
           <option value="comida-arabe">Comida arabe - Shawarma</option>
           <option value="comida-italiana">Comida italiana - Pizza</option>
           <option value="comida-rapida">Comida rapida - Hamburguesa</option>
@@ -57,9 +58,19 @@
           <option value="comida-asiatica">Comida asiatica - Ramen</option>
         </select>
       </div>
-      <div class="form-group" id="check"></div>
+      <div class="form-group" id="checkbox-ingredientes"></div>
+      <div class="form-group">
+        <label for="metodo-pago">Metodo de pago</label>
+        <select class="form-control" id="metodo-de-pago" onchange="metodoDePago()" required>
+          <option value="sin-escoger">---</option>
+          <option value="comida-arabe">Efectivo</option>
+          <option value="comida-italiana">Tarjeta de crédito</option>
+          <option value="comida-rapida">Tarjeta debito</option>
+        </select>
+      </div>
+      <div class="form-group" id="metodopago"></div>
       <div>
-        <button type="button" class="btn btn-danger d-flex justify-content-center" onclick="detallesDelPedido()">Siguiente</button>
+        <button type="submit" class="btn btn-danger d-flex justify-content-center">Siguiente</button>
       </div>
     </form>
   </section>
