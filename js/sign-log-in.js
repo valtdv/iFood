@@ -1,4 +1,4 @@
-function signin(){
+function signIn(){
     document.title = "iFood - Registrarse";
     document.getElementById("form").innerHTML = "<form class='bg-light' id='formulario' action='../set_usuario.php' method='post'>" +
     "<div class='form-group'><h1>Crea tu cuenta en iFood</h1></div>" +
@@ -37,11 +37,11 @@ function signin(){
     "<div class ='buttonHolder'>"+
       "<button type='submit' class='btn btn-danger'>Registrarse</button>" +
     "</div>"+  
-    "<a class='nav-link' onclick='login()'>¿Ya tienes una cuenta?</a>" +
+    "<a class='nav-link' onclick='logIn()'>¿Ya tienes una cuenta?</a>" +
   "</form>";
 }
 
-function login(){
+function logIn(){
     document.title = "iFood - Iniciar sesión";
     document.getElementById("form").innerHTML = "<form class='bg-light' id='formulario'>" +
     "<div class='form-group'><h1>Iniciar sesión en iFood</h1></div>" +
@@ -59,6 +59,6 @@ function login(){
       "><input type='password' class='form-control' id='password1' />" +
     "</div>" +
     "<button type='submit' class='btn btn-danger'>Iniciar sesión</button>" +
-   "<a class='nav-link' onclick='signin()'>¡Crea tu cuenta!</a>" +
+   "<a class='nav-link' onclick='signIn()'>¡Crea tu cuenta!</a>" +
   "</form>";
 }

@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="./css/styles.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <script src="./js/sesion_cliente.js"></script>
 </head>
 
 <body>
@@ -46,33 +47,19 @@
         <input type="text" class="form-control" id="pedido" name = "pedido" required>
       </div>
       <div class="form-group">
-<<<<<<< HEAD:inicio.php
         <label for="ingredientes">Escoge tu plato</label>
         <select class="form-control" id="ingredientes" required>
-          <option>Comida arabe - Shawarma</option>
-          <option>Comida italiana - Pizza</option>
-          <option>Comida mexicana - Tacos</option>
-          
-=======
-        <label for="ingredientes">Escoge tus ingredientes</label>
-        <select class="form-control" id="ingredientes" name="ingredientes"required>
-          <option>1</option>
->>>>>>> 43e4197f2f0c0fbf6464688fe9efca8a079943b9:sesion_cliente.php
+          <option value="comida-arabe">Comida arabe - Shawarma</option>
+          <option value="comida-italiana">Comida italiana - Pizza</option>
+          <option value="comida-rapida">Comida rapida - Hamburguesa</option>
+          <option value="comida-mexicana">Comida mexicana - Tacos</option>
+          <option value="comida-colombiana">Comida colombiana - Bandeja Paisa</option>
+          <option value="comida-asiatica">Comida asiatica - Ramen</option>
         </select>
       </div>
-      <div class="form-group">
-        <label for="preparacion">Detalles de preparación</label>
-        <textarea class="form-control" id="preparacion" rows="3" name="preparacion"required></textarea>
-      </div>
-      <div class="form-group">
-        <label for="pago">Método de pago</label>
-        <select class="form-control" id="pago" name="pago">
-          <option>Efectivo</option>
-          <option>Tarjeta de credito</option>
-        </select>
-      </div>
+      <div class="form-group" id="check"></div>
       <div>
-        <button type="submit" class="btn btn-danger d-flex justify-content-center">Enviar</button>
+        <button type="button" class="btn btn-danger d-flex justify-content-center" onclick="detallesDelPedido()">Siguiente</button>
       </div>
     </form>
   </section>

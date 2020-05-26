@@ -1,7 +1,0 @@
-function detallesDelPedido(){
-
-}
-
-function metodoDePago(){
-
-}

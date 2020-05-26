@@ -38,7 +38,7 @@
         </div>
         <div class = "buttonHolder">
           <button type="submit" class="btn btn-danger">Iniciar sesión</button>
-          <button onclick="signin()" type "submit" class ="btn btn-danger"> Crear cuenta </button>
+          <button onclick="signIn()" type "submit" class ="btn btn-danger"> Crear cuenta </button>
         </div>
       </form>
     </section>
