@@ -1,6 +1,6 @@
 function signin(){
     document.title = "iFood - Registrarse";
-    document.getElementById("form").innerHTML = "<form class='bg-light' id='formulario' action='php/set_usuario.php' method='post'>" +
+    document.getElementById("form").innerHTML = "<form class='bg-light' id='formulario' action='../set_usuario.php' method='post'>" +
     "<div class='form-group'><h1>Crea tu cuenta en iFood</h1></div>" +
     "<div class='form-group'>" +
       "<label for='nombre'>Nombre</label>" +
@@ -34,7 +34,9 @@ function signin(){
       "<label for='password1'>Confirma tu contraseña</label>" +
       "<input type='password' class='form-control' id='password1' name='password1' required />" +
     "</div>" +
-    "<button type='submit' class='btn btn-danger'>Registrarse</button>" +
+    "<div class ='buttonHolder'>"+
+      "<button type='submit' class='btn btn-danger'>Registrarse</button>" +
+    "</div>"+  
     "<a class='nav-link' onclick='login()'>¿Ya tienes una cuenta?</a>" +
   "</form>";
 }

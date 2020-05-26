@@ -8,11 +8,11 @@
     $sql="INSERT INTO `Restaurante` (`idrestaurante`, `nombre`, `ubicacion`, `telefono`, `correo`) VALUES ('12','$nombre','$direccion', '$telefono', '$email')";
 
     if (mysqli_query($connection, $sql)) {
-        echo "Registro Exitoso";
+        //echo "Registro Exitoso";
+        include('../html/reg_exitoso.html');
     } else {
-        echo "Error: " . $sql . "<br>" . mysqli_error($connection);
+        //echo "Error: " . $sql . "<br>" . mysqli_error($connection);
+        include('../html/error_registro.html');
     }
     mysqli_close($connection);
-
-    echo "<br><button type='submit' onclick=location='../index.php'> Aceptar </button>";
 ?>

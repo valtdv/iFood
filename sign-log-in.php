@@ -2,18 +2,18 @@
 <html>
   <head>
     <title>MyFood - Iniciar sesión</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
-    <script src="./sign-log-in.js"></script>
+    <script src="./js/sign-log-in.js"></script>
   </head>
   <body class="pattern">
-    <section id="form" class="d-flex justify-content-center">
-      <form class="bg-light" id="formulario">
+    <section id="form" class="d-flex justify-content-center" >
+      <form class="bg-light" id="formulario" action='iniciar_sesion.php' method='post' >
         <div class="form-group">
           <h1>Iniciar sesión en MyFood</h1>
         </div>
@@ -23,6 +23,7 @@
             type="email"
             class="form-control"
             id="email1"
+            name = "email1"
             aria-describedby="emailHelp"
           />
         </div>
@@ -32,10 +33,13 @@
             type="password"
             class="form-control"
             id="password1"
+            name = "password1"
           />
         </div>
-        <button type="submit" class="btn btn-danger">Iniciar sesión</button>
-        <a onclick="signin()">¡Crea tu cuenta!</a>
+        <div class = "buttonHolder">
+          <button type="submit" class="btn btn-danger">Iniciar sesión</button>
+          <button onclick="signin()" type "submit" class ="btn btn-danger"> Crear cuenta </button>
+        </div>
       </form>
     </section>
     <footer class="bg-light page-footer font-small mdb-color pt-4">
@@ -51,9 +55,6 @@
           <hr class="w-100 clearfix d-md-none" />
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
             <h6 class="text-uppercase mb-4 font-weight-bold">MyFood</h6>
-            <p>
-              <a href="./register-rest.php">Registra tu restaurante</a>
-            </p>
             <p>
               <a href="./sign-log-in.php">Inicia sesión</a>
             </p>
