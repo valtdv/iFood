@@ -37,7 +37,7 @@
   <section>
     <img src="./img/Tieneshambre.png" class="img-fluid" alt="Imagen de comida" />
   </section>
-  <!--INFORMACIÓN DE LOS RESTAURANTES -->
+  <!--  CREAR PEDIDO -->
   <section id="rest">
     <h1 class="d-flex justify-content-center display-3">Crea tu pedido</h1>
     <form id="pedidos">
@@ -46,9 +46,12 @@
         <input type="text" class="form-control" id="pedido" required>
       </div>
       <div class="form-group">
-        <label for="ingredientes">Escoge tus ingredientes</label>
+        <label for="ingredientes">Escoge tu plato</label>
         <select class="form-control" id="ingredientes" required>
-          <option></option>
+          <option>Comida arabe - Shawarma</option>
+          <option>Comida italiana - Pizza</option>
+          <option>Comida mexicana - Tacos</option>
+          
         </select>
       </div>
       <div class="form-group">
@@ -67,6 +70,7 @@
       </div>
     </form>
   </section>
+  <!-- INFORMACION DE LA EMPRESA -->
   <footer class="bg-light page-footer font-small mdb-color pt-4">
     <div class="container text-center text-md-left">
       <div class="row text-center text-md-left mt-3 pb-3">
