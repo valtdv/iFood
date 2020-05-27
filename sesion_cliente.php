@@ -63,9 +63,9 @@
         <label for="metodo-pago">Metodo de pago</label>
         <select class="form-control" id="metodo-de-pago" onchange="metodoDePago()" required>
           <option value="sin-escoger">---</option>
-          <option value="comida-arabe">Efectivo</option>
-          <option value="comida-italiana">Tarjeta de crédito</option>
-          <option value="comida-rapida">Tarjeta debito</option>
+          <option value="efectivo">Efectivo</option>
+          <option value="credito">Tarjeta de crédito</option>
+          <option value="debito">Tarjeta debito</option>
         </select>
       </div>
       <div class="form-group" id="metodopago"></div>
