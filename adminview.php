@@ -32,7 +32,7 @@
             <div id="page-content-wrapper">
                 <h1 id="titlehome">Bienvenido/a Administrador/a</h1>
                 <div class = "container-fluid">
-                    <img src="./images/hamburger.png" alt="Esto es una hamburguesa" class="center">
+                    <img src="./img/hamburger.png" alt="Esto es una hamburguesa" class="center">
                 </div>
             </div>    
 
