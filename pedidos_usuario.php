@@ -36,17 +36,18 @@
     <!-- PEDIDOS REALIZADOS -->
     <section id="pedidos" class="viewprt">
         <h1 class="d-flex justify-content-center display-4 text-center">¡Hola, NOMBRE! Estos son tus pedidos realizados</h1>
+        <br><br>
         <!-- TABLA DE PEDIDOS -->
-        <table class="table">
-            <thead>
+        <table class="table table-bordered text-center">
+            <thead class="thead-dark">
                 <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
+                    <th scope="col">ID del pedido</th>
+                    <th scope="col">Nombre del pedido</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col">Plato</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody id="t-body" class="table-striped">
             </tbody>
         </table>
     </section>
