@@ -56,3 +56,7 @@ article{
   display: block;
   height: 100vh;
 }
+
+.img-btn-a:hover{
+  transform: scale(1.1);
+}
