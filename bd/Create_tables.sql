@@ -41,6 +41,7 @@ CREATE TABLE Plato(
 CREATE TABLE Pi_Ing (
   idplato int not null,
   idingrediente int not null,
+  PRIMARY KEY (idplato, idingrediente)
   FOREIGN KEY (idplato) REFERENCES Plato(idplato),
   FOREIGN KEY (idingrediente) REFERENCES Ingrediente(idingrediente)
 )ENGINE = InnoDB DEFAULT CHARACTER SET = latin1;

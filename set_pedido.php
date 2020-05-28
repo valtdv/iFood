@@ -29,20 +29,18 @@
         }
       }
       //Tomar id del ingrediente 
-      $sql="SELECT * FROM Ingrediente WHERE nombre='$selected'";
-      $result1=(mysqli_query($connection, $sql));
+      $sql4="SELECT * FROM Ingrediente WHERE nombre='$selected'";
+      $result1=(mysqli_query($connection, $sql4));
       while($row1 = mysqli_fetch_row($result1)){
-        $idingrediente = $row1[0];
+        $idingredient = $row1[0];
       }
-      echo $idingrediente;
-      echo $idplato;
-      echo $sql3="INSERT INTO Pi_Ing VALUES ('$idingrediente','$idplato')";
+      //echo $idingrediente;
+      //echo $idplato;
+      echo $sql3="INSERT INTO Pi_Ing VALUES ('$idingredient','$idplato')";
+      echo mysqli_query($connection, $sql3);
       if (!mysqli_query($connection, $sql3)) {
           //registro no exitoso
           echo "problema al insertar Pi_Ing ";
-          echo "Error: Unable to connect to MySQL." . PHP_EOL;
-          echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
-          echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
       }
       } 
     }

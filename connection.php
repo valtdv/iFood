@@ -1,7 +1,7 @@
 <?php
-  $db_host = 'landingpage_db_1';
+  //$db_host = 'landingpage_db_1';
 
-  //$db_host = 'db4free.net';
+  $db_host = 'db4free.net';
   $db_username = 'usu_01_ifood';
   $db_password = 'ifoodpass';
   $db_schema = 'ifood_01';
