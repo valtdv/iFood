@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>MyFood - Un error ha ocurrdo</title>
+    <title>MyFood - Pedido Exitoso</title>
     <link rel='stylesheet' href='styles.css' />
     <link
             rel='stylesheet'
@@ -13,9 +13,9 @@
 <body class='pattern'>
 <section id='form' class='d-flex justify-content-center'>
     <article class='bg-light' id='formulario'>
-        <h1>Un error ha ocurrdo</h1>
-        <p>Ha ocurrido un error en el registro de tu pedido, notifica a los administradores</p>
-        <button class='btn btn-danger' type='submit' onclick=location='../sesion_cliente.php'> Aceptar </button>
+        <h1>Se ha registrado su pedido de forma exitosa</h1>
+        <p>Vea el estado de su pedido en la opción, estado del pedido</p>
+        <button class='btn btn-danger' type='submit' onclick=location='./sesion_cliente.php'> Aceptar </button>
     </article>
 </section>
 <script
