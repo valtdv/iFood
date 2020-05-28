@@ -18,7 +18,7 @@
     while($row = mysqli_fetch_row($result)){
       
       //toma el id del plato
-      $idplato =  $row[0];
+      $idplato = (int) $row[0];
       
       foreach($ingredientes as $selected){
 
@@ -37,22 +37,22 @@
       $sql4="SELECT * FROM Ingrediente WHERE nombre='$selected'";
       $result1=(mysqli_query($connection, $sql4));
       while($row1 = mysqli_fetch_row($result1)){
-        $idingredient = $row1[0];
+        $idingredient = (int) $row1[0];
       }
 
-      echo $idingredient;
+      //echo $idingredient;
       //echo $idplato;
-      $sql3="INSERT INTO Pi_Ing VALUES ('$idingredient', '$idplato')";
+      $sql3="INSERT INTO Pi_Ing VALUES ('$idplato', '$idingredient')";
       if (!mysqli_query($connection, $sql3)) {
           //registro no exitoso
           //echo "problema al insertar Pi_Ing ";
-          echo "Error: Unable to connect to MySQL." . PHP_EOL;
-          echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
-          echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
+          echo "Error: Unable to connect to MySQL. \n" . PHP_EOL;
+          echo "Debugging errno: \n" . mysqli_connect_errno() . PHP_EOL;
+          echo "Debugging error: \n" . mysqli_connect_error() . PHP_EOL;
       }
+      
       } 
     }
-
     
     //$ingredientes = $_POST['preparacion'];
     $ingredientes = 2;
