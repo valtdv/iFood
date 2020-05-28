@@ -13,62 +13,30 @@
         <table class="table">
             <thead class="thead-dark">
                 <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
+                    <th scope="col">#Orden</th>
+                    <th scope="col">id de Plato</th>
+                    <th scope="col">Detalles</th>
+                    <th scope="col">Estado</th>
+                    <th scope="col">Persona</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <table class="table">
-            <thead class="thead-light">
-                <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                </tr>
-                <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                </tr>
-                <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                </tr>
+                <?php
+                    include('connection.php');
+                    $query = "SELECT * FROM Orden";
+                    $result = mysqli_query($connection, $query);
+                    // Añadir registros a la tabla que se creó anteriormente, desde la base de datos  
+                    while ($row = mysqli_fetch_row($result)){
+                        //echo "<tr onclick=location='verdetallesactividad.php?var=$row[0]'>"; 
+                        echo "<tr>";
+                        echo "<td align=center>".$row[0]."</td>";  
+                        echo "<td align=center>".$row[1]."</td>";
+                        echo "<td align=center>".$row[2]."</td>";
+                        echo "<td align=center>".$row[3]."</td>";
+                        echo "<td align=center>".$row[4]."</td>";    
+                        echo "</tr>";
+                    }  
+                ?>
             </tbody>
         </table>
     </body>
