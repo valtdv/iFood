@@ -14,10 +14,10 @@
     $sql = "INSERT INTO Cliente VALUES (NULL, '$password1','$membresia','$nombre','$apellido1','$apellido2','$email1','$telefono1','$direccion')";
     if (mysqli_query($connection, $sql)) {
         //echo "Cuenta creada exitosamente";
-        include('../html/reg_exitoso.html');
+        include('./mensajes/reg_exitoso.php');
     } else {
         //echo "Error: " . $sql . "<br>" . mysqli_error($connection);
-        include('../html/error_registro.html');
+        include('./mensajes/error_registro.php');
     }
     mysqli_close($connection);
 ?>

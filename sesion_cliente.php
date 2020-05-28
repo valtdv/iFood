@@ -48,7 +48,7 @@
       </div>
       <div class="form-group">
         <label for="ingredientes">Escoge tu plato</label>
-        <select class="form-control" id="ingredientes" onchange="detallesDelPedido()" required>
+        <select class="form-control" id="ingredientes" name="categoria" onchange="detallesDelPedido()" required>
           <option value="sin-escoger">---</option>
           <option value="comida-arabe">Comida arabe - Shawarma</option>
           <option value="comida-italiana">Comida italiana - Pizza</option>
