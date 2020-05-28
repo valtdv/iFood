@@ -49,7 +49,7 @@ CREATE TABLE Pi_Ing (
 CREATE TABLE Orden (
   idorden int not null auto_increment,
   plato int not null,
-  nombre varchar(50),
+  descipcion varchar(50),
   estado varchar(50),
   idpersona int not null,
   PRIMARY KEY (idorden),

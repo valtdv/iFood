@@ -7,11 +7,12 @@
 
     if (mysqli_query($connection, $sql)) {
         $result = mysqli_query($connection, $sql);
-        if (mysqli_fetch_array($result) == NULL) {
+        if (! $row = mysqli_fetch_array($result)) {
           echo "<script> alert('Ha introducido un correo o contraseña errados, verifique e intente nuevamente') </script>";
           include ('index.php');
         }else{
           echo "accedido";
+          $Nombre = $row[3];
           include ('sesion_cliente.php');
         }
     } else {
