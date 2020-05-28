@@ -24,6 +24,9 @@
           <li class="nav-item active">
             <a class="nav-link text-white" href="#rest">Crear pedido<span class="sr-only">(current)</span></a>
           </li>
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="./pedidos_usuario.php">Ver pedidos</a>
+          </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Search" />
@@ -41,10 +44,10 @@
   <!--  CREAR PEDIDO -->
   <section id="rest">
     <h1 class="d-flex justify-content-center display-3">Crea tu pedido</h1>
-    <form id="pedidos" action='set_pedido.php' method='post' >
+    <form id="pedidos" action='set_pedido.php' method='post'>
       <div class="form-group">
         <label for="pedido">Nombre del pedido</label>
-        <input type="text" class="form-control" id="pedido" name = "pedido" required>
+        <input type="text" class="form-control" id="pedido" name="pedido" required>
       </div>
       <div class="form-group">
         <label for="ingredientes">Escoge tu plato</label>

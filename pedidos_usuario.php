@@ -23,6 +23,9 @@
                     <li class="nav-item active">
                         <a class="nav-link text-white" href="#pedidos">Ver pedidos<span class="sr-only">(current)</span></a>
                     </li>
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="./sesion_cliente.php">Crear pedido</a>
+                    </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                     <input class="form-control mr-sm-2" type="search" placeholder="Buscar..." aria-label="Search" />
@@ -42,7 +45,7 @@
             <thead class="thead-dark">
                 <tr>
                     <th scope="col">ID del pedido</th>
-                    <th scope="col">Nombre del pedido</th>
+                    <th scope="col">Descripción</th>
                     <th scope="col">Estado</th>
                     <th scope="col">Plato</th>
                 </tr>
