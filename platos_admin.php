@@ -9,6 +9,30 @@
     </head>
     <body>
         <h1 class="seccion_titles">Gestión de Platos</h1>
-        <p>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</p>
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#Plato</th>
+                    <th scope="col">Categoria</th>
+                    <th scope="col">Precio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                    include('connection.php');
+                    $query = "SELECT * FROM Plato";
+                    $result = mysqli_query($connection, $query);
+                    // Añadir registros a la tabla que se creó anteriormente, desde la base de datos  
+                    while ($row = mysqli_fetch_row($result)){
+                        //echo "<tr onclick=location='verdetallesactividad.php?var=$row[0]'>"; 
+                        echo "<tr>";
+                        echo "<td align=center>".$row[0]."</td>";  
+                        echo "<td align=center>".$row[1]."</td>";
+                        echo "<td align=center>".$row[2]."</td>";    
+                        echo "</tr>";
+                    }  
+                ?>
+            </tbody>
+        </table>
     </body>
 </html>

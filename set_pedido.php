@@ -2,6 +2,7 @@
     include('connection.php');
     $categoria =  $_POST['categoria'];
     $ingredientes = $_POST['ingredientes'];
+    $descripcion = $_POST['descripcion'];
     
     //$sql="INSERT INTO Plato VALUES (NULL,'$categoria', '10000')";
     $sql0="SELECT * FROM Plato WHERE categoria='$categoria'";
@@ -51,23 +52,17 @@
           echo "Debugging error: \n" . mysqli_connect_error() . PHP_EOL;
       }
       
-      } 
+      }
+
+      $sql5 ="INSERT INTO Orden VALUES (NULL, '$idplato','$descripcion', 'En proceso','1')";
+      if (mysqli_query($connection, $sql5)) {
+        //Rgistro exitoso
+        include('./mensajes/pedido_exitoso.php');
+      } else {
+        //registro no exitoso
+        include('./mensajes/pedido_noexitoso.php');
+      }
     }
-    
-    //$ingredientes = $_POST['preparacion'];
-    $ingredientes = 2;
-    $pago = $_POST['pago'];
 
-    /*$sql="INSERT INTO Plato VALUES (NULL,'$pedido', '20000')";
-    //$sql="INSERT INTO Pedido VALUES (NULL,'$pedido','$ingredientes', '$ingredientes', '$pago')";
-
-
-    if (mysqli_query($connection, $sql)) {
-      //Rgistro exitoso
-      include('./mensajes/pedido_exitoso.php');
-    } else {
-      //registro no exitoso
-      include('./mensajes/pedido_noexitoso.php');
-    }*/
     mysqli_close($connection);
 ?>

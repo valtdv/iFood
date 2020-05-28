@@ -46,8 +46,8 @@
     <h1 class="d-flex justify-content-center display-3">Crea tu pedido</h1>
     <form id="pedidos" action='set_pedido.php' method='post'>
       <div class="form-group">
-        <label for="pedido">Nombre del pedido</label>
-        <input type="text" class="form-control" id="pedido" name="pedido" required>
+        <label for="pedido">Nombre del usuario</label>
+        <input type="text" class="form-control" id="pedido" name = "pedido" value= <?php echo $Nombre ?> >
       </div>
       <div class="form-group">
         <label for="ingredientes">Escoge tu plato</label>
@@ -62,6 +62,10 @@
         </select>
       </div>
       <div class="form-group" id="checkbox-ingredientes"></div>
+      <div class="form-group">
+        <label for="pedido">Descripción del pedido </label>
+        <input type="text" class="form-control" id="descripcion" name = "descripcion" >
+      </div>
       <div class="form-group">
         <label for="metodo-pago">Metodo de pago</label>
         <select class="form-control" id="metodo-de-pago" onchange="metodoDePago()" required>
