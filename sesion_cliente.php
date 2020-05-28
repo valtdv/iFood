@@ -70,7 +70,7 @@
       </div>
       <div class="form-group" id="metodopago"></div>
       <div>
-        <button type="submit" class="btn btn-danger d-flex justify-content-center">Siguiente</button>
+        <button type="submit" class="btn btn-danger d-flex justify-content-center">Realizar pedido</button>
       </div>
     </form>
   </section>
