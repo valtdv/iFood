@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>MyFood - Registro exitoso</title>
-    <link rel='stylesheet' href='styles.css' />
+    <link rel='stylesheet' href='./css/styles.css' />
     <link
             rel='stylesheet'
             href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'

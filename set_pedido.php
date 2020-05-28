@@ -54,8 +54,8 @@
       
       }
 
-      $sql5 ="INSERT INTO Orden VALUES (NULL, '$idplato','$descripcion', '$idingredient','1')";
-      if (mysqli_query($connection, $sql)) {
+      $sql5 ="INSERT INTO Orden VALUES (NULL, '$idplato','$descripcion', 'En proceso','1')";
+      if (mysqli_query($connection, $sql5)) {
         //Rgistro exitoso
         include('./mensajes/pedido_exitoso.php');
       } else {

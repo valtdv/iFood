@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>MyFood - Pedido Exitoso</title>
-    <link rel='stylesheet' href='styles.css' />
+    <link rel='stylesheet' href='./css/styles.css' />
     <link
             rel='stylesheet'
             href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'
@@ -15,7 +15,7 @@
     <article class='bg-light' id='formulario'>
         <h1>Se ha registrado su pedido de forma exitosa</h1>
         <p>Vea el estado de su pedido en la opción, estado del pedido</p>
-        <button class='btn btn-danger' type='submit' onclick=location='./sesion_cliente.php'> Aceptar </button>
+        <button class='btn btn-danger' type='submit' onClick="history.go(-1)" > Aceptar </button>
     </article>
 </section>
 <script
