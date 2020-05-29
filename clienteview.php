@@ -42,7 +42,7 @@
         <h1 class="d-flex justify-content-center display-4 text-center">Bienvenido/a, </h1>
         <br><br>
         <div class="d-flex flex-row justify-content-around">
-            <a href="./sesion_cliente.php" class="img-btn-a"><img src="./img/verpedido.png" alt=""></a>
+            <a href="./crearpedidos_usuario.php" class="img-btn-a"><img src="./img/verpedido.png" alt=""></a>
             <a href="./pedidos_usuario.php" class="img-btn-a"><img src="./img/Crearpedido.png" alt=""></a>
         </div>
     </section>

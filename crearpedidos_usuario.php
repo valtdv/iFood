@@ -29,7 +29,7 @@
             <a class="nav-link text-white" href="#rest">Crear pedido<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link text-white" href=<?php echo "./pedidos_usuario.php?user=",$Nombre,"&id=",$iduser; ?> >Ver pedidos</a>
+            <a class="nav-link text-white" href="./pedidos_usuario.php?user=">Ver pedidos</a>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
@@ -51,7 +51,7 @@
     <form id="pedidos" action='set_pedido.php' method='post'>
       <div class="form-group">
         <label for="pedido">Nombre del usuario</label>
-        <input type="text" class="form-control" id="pedido" name = "pedido" value= <?php echo $Nombre ?> >
+        <input type="text" class="form-control" id="pedido" name = "pedido" value= "<?php echo $Nombre ?>" >
       </div>
       <div class="form-group">
         <label for="ingredientes">Escoge tu plato</label>
