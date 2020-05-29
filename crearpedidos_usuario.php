@@ -1,3 +1,7 @@
+<?php 
+  $Nombre = $_GET['user'];
+  $iduser = $_GET['id'];
+?>
 <!DOCTYPE html>
 <html>
 

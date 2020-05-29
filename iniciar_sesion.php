@@ -14,7 +14,7 @@
           echo "accedido";
           $Nombre = $row[3];
           $iduser = $row[0];
-          include ('sesion_cliente.php');
+          include ('clienteview.php');
         }
     } else {
         echo "Error: " . $sql . "<br>" . mysqli_error($connection);

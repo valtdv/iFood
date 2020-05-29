@@ -22,10 +22,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link text-white" href="./sesion_cliente.php">Crear pedido</a>
+                        <a class="nav-link text-white" href=<?php echo "./crearpedidos_usuario.php?user=",$Nombre,"&id=",$iduser; ?>>Crear pedido</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link text-white" href="./pedidos_usuario.php">Ver pedidos</a>
+                        <a class="nav-link text-white" href=<?php echo "./pedidos_usuario.php?user=",$Nombre,"&id=",$iduser; ?>>Ver pedidos</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">

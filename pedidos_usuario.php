@@ -1,3 +1,7 @@
+<?php 
+  $Nombre = $_GET['user'];
+  $id = $_GET['id'];
+?>
 <!DOCTYPE html>
 <html>
 
@@ -24,7 +28,7 @@
                         <a class="nav-link text-white" href="#pedidos">Ver pedidos<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link text-white" href="./sesion_cliente.php">Crear pedido</a>
+                        <a class="nav-link text-white" href=<?php echo "./crearpedidos_usuario.php?user=",$Nombre,"&id=",$id; ?>>Crear pedido</a>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
@@ -38,7 +42,7 @@
     </header>
     <!-- PEDIDOS REALIZADOS -->
     <section id="pedidos" class="viewprt">
-        <h1 class="d-flex justify-content-center display-4 text-center">¡Hola, <?php echo $_GET['user']; ?> Estos son tus pedidos realizados</h1>
+        <h1 class="d-flex justify-content-center display-4 text-center">¡Hola, <?php echo $Nombre; ?> Estos son tus pedidos realizados</h1>
         <br><br>
         <!-- TABLA DE PEDIDOS -->
 
@@ -52,7 +56,6 @@
                 </tr>
                 <?php
                     include('connection.php');
-                    $id = $_GET['id'];
                     $query = "SELECT * FROM Orden WHERE idpersona='$id'";
                     $result = mysqli_query($connection, $query);
                     // Añadir registros a la tabla que se creó anteriormente, desde la base de datos  
