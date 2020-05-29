@@ -25,7 +25,7 @@
             <a class="nav-link text-white" href="#rest">Crear pedido<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link text-white" href="./pedidos_usuario.php">Ver pedidos</a>
+            <a class="nav-link text-white" href=<?php echo "./pedidos_usuario.php?user=",$Nombre,"&id=",$iduser; ?> >Ver pedidos</a>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">

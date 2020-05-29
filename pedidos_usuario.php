@@ -38,17 +38,34 @@
     </header>
     <!-- PEDIDOS REALIZADOS -->
     <section id="pedidos" class="viewprt">
-        <h1 class="d-flex justify-content-center display-4 text-center">¡Hola, NOMBRE! Estos son tus pedidos realizados</h1>
+        <h1 class="d-flex justify-content-center display-4 text-center">¡Hola, <?php echo $_GET['user']; ?> Estos son tus pedidos realizados</h1>
         <br><br>
         <!-- TABLA DE PEDIDOS -->
+
         <table class="table table-bordered text-center">
             <thead class="thead-dark">
                 <tr>
                     <th scope="col">ID del pedido</th>
+                    <th scope="col">Plato</th>
                     <th scope="col">Descripción</th>
                     <th scope="col">Estado</th>
-                    <th scope="col">Plato</th>
                 </tr>
+                <?php
+                    include('connection.php');
+                    $id = $_GET['id'];
+                    $query = "SELECT * FROM Orden WHERE idpersona='$id'";
+                    $result = mysqli_query($connection, $query);
+                    // Añadir registros a la tabla que se creó anteriormente, desde la base de datos  
+                    while ($row = mysqli_fetch_row($result)){
+                        //echo "<tr onclick=location='verdetallesactividad.php?var=$row[0]'>"; 
+                        echo "<tr>";
+                        echo "<td align=center>".$row[0]."</td>";  
+                        echo "<td align=center>".$row[1]."</td>";
+                        echo "<td align=center>".$row[2]."</td>";
+                        echo "<td align=center>".$row[3]."</td>";    
+                        echo "</tr>";
+                    }  
+                ?>
             </thead>
             <tbody id="t-body" class="table-striped">
             </tbody>

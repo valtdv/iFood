@@ -13,6 +13,7 @@
         }else{
           echo "accedido";
           $Nombre = $row[3];
+          $iduser = $row[0];
           include ('sesion_cliente.php');
         }
     } else {
